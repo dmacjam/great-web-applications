@@ -13,7 +13,7 @@ p.greet
 
 
 
-
+#typ classov
 puts p.class
 puts p.class.class
 puts p.class.class.class
@@ -21,6 +21,7 @@ puts p.class.class.class
 
 puts 1.class
 puts 1.public_methods(false).inspect
+
 
 puts 2.even?
 
@@ -30,9 +31,11 @@ puts false.class
 puts nil.class
 
 
+#to + je vlastne metoda nad objektom
 puts (1 + 2) == 1.+(2)
 
 
 # duck typing
-
 puts 2.respond_to?(:+)
+#aj takto, string sa prekonvertuje na symbol
+#puts 2.respond_to?('+')

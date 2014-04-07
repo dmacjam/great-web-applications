@@ -23,4 +23,8 @@ end
 
 f = Family.new
 
-puts f.partition { |member| member.include?('e') }.inspect
+#f.each do |meno|
+#  puts meno
+#end
+
+puts f.partition { |member| member.include?('e') }.inspect    #rovnake ako .to_s v tomto pripade

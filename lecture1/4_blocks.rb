@@ -52,15 +52,16 @@ with_transaction_level('LEVEL 2') do
 end
 
 
-
-
-
+#pouziva sa yield ked metoda ocakava blok
 def with_transaction3
   puts 'BEGIN'
   yield
   puts 'COMMIT'
 end
 
+with_transaction3() do
+  puts 'JAKUB'
+end
 
 
 
@@ -69,6 +70,7 @@ def one_two_three
   yield 1
   yield 2
   yield 3
+  yield('jakub')
 end
 
 one_two_three do |i|

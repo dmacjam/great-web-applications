@@ -39,12 +39,6 @@ end
 
 # add behaviour Evaluating
 
-
-
-
-
-
-
 class Literal
   def eval
     value
@@ -63,4 +57,5 @@ class Negative
   end
 end
 
+puts Negative.new(total).show
 puts Negative.new(total).eval
